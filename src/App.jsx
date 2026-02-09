@@ -42,6 +42,9 @@ export default function App() {
         }
       />
 
+      {/* Catch-all route for unmatched paths */}
+      <Route path="*" element={<Navigate to="/login" />} />
+
     </Routes>
   );
 }

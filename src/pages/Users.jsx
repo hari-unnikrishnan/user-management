@@ -140,7 +140,7 @@ export default function Users() {
 
   const handleLogout = () => {
     localStorage.clear(); // or remove token
-    window.location.href = "/login";
+    navigate("/login");
   };
 
   const fetchUsers = useCallback(async () => {
